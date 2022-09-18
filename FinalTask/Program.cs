@@ -5,3 +5,11 @@
 // При решении не рекомендуется пользоваться коллекциями, лучше обойтись исключительно массивами
 
 string[] array = new string[] { "hello", "2", "world", ":-)"};
+void PrintArray(string[] arr)
+{
+    for (int i = 0; i < arr.Length; i++)
+    {
+        Console.Write($"{arr[i]} ");
+    }
+    Console.WriteLine();
+}
