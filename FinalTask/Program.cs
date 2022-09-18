@@ -4,7 +4,7 @@
 // Первоначальный массив можно ввести с клавиатуры, либо задать на старте выполнения алгоритма.
 // При решении не рекомендуется пользоваться коллекциями, лучше обойтись исключительно массивами
 
-string[] array = new string[] { "hello", "2", "world", ":-)"};
+string[] array = new string[] { "hello", "2", "world", ":-)" };
 void PrintArray(string[] arr)
 {
     for (int i = 0; i < arr.Length; i++)
@@ -21,7 +21,11 @@ void Formation(string[] arr)
         if (element.Length <= 3)
         {
             arr[i] = element;
-    }
+        }
         else arr[i] = string.Empty;
     }
 }
+PrintArray(array);
+Formation(array);
+Console.Write("Итог: ");
+PrintArray(array);
